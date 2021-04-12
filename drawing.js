@@ -72,7 +72,7 @@ var shapes = {
 draw = function () {
    
    var drawing = document.getElementById("drawing");
-   var diagram = new FourierDiagram (drawing, JSON.parse (shapes.lion), 100);
+   var diagram = new FourierDiagram (drawing, JSON.parse (shapes.lion), 800);
    diagram.draw();
 };
 draw();
