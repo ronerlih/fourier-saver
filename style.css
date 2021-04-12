@@ -1,0 +1,66 @@
+:root {
+   --line-storke: rgb(69, 220, 185);
+   --line-storke-width: 0.2px;
+   --polyline-storke: rgb(245, 245, 245);
+   --polyline-storke-width: 1.5px;
+   --traceline-storke-width: 1.5px;
+   --circle-storke: rgba(196, 196, 196, 0.461);
+   --circle-storke-width: 1.5;
+   --trace-line-storke-width: .8;
+   --stop-color: rgb(0, 255, 174);
+}
+body { 
+   margin: 0px;
+   background-color: black;
+   transform:translateX(-100px);
+   /* transform: scale(2.9) translateX(1400px); */
+}
+#drawing {
+   width: 100vh;
+   height: 100vh;
+}
+line {
+   stroke: var(--line-storke);
+}
+circle {
+   stroke:  var(--circle-storke);
+   stroke-width: var(--circle-storke-width);
+   stroke-dasharray: 5px 60px;
+
+}
+
+polyline {
+   stroke: var(--polyline-storke);
+   stroke-width: var(--polyline-storke-width);
+   /* fill-opacity: 0; */
+   stroke: teal;
+
+
+}
+
+.stop {
+   fill: var(--stop-color);
+}
+
+.centrePoint {
+   fill: none;
+}
+
+.bigCircle {
+   fill-opacity: 0;
+}
+
+.endCircle {
+   fill: none;
+   display: none;
+}
+
+.traceLine {
+   stroke-width: var(--traceline-storke-width);
+   /* stroke-width: 0; */
+   /* stroke: var(--stop-color); */
+   /* fill:rgba(205, 107, 37, 0.227); */
+   /* width:10px; */
+   stroke-linecap: "round";
+   fill: none;
+}
